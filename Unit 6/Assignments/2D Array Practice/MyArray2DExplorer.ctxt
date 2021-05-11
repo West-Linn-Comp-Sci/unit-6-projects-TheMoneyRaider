@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=MyArray2DExplorer
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=nums\ row
+comment2.target=int\ minRow(int[][],\ int)
+comment3.params=matrix
+comment3.target=int[]\ colMaxs(int[][])
+comment4.params=data
+comment4.target=int[]\ allRowSums(int[][])
+comment5.params=nums
+comment5.target=double[]\ averageCol(int[][])
+comment6.params=matrix
+comment6.target=int\ smallEven(int[][])
+comment7.params=nums
+comment7.target=int\ biggestRow(int[][])
+numComments=8

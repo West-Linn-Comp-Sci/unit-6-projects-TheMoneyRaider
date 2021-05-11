@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=LinearSearch
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ LinearSearch\ here.\r\n\r\n\ @CodeHS\r\n\ @1\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=array2D\ key
+comment2.target=java.lang.String\ search(java.lang.String[][],\ java.lang.String)
+numComments=3

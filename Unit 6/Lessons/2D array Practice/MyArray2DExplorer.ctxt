@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=MyArray2DExplorer
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=mat\ row
+comment2.target=boolean\ evenRow(int[][],\ int)
+comment3.params=nums\ col
+comment3.target=boolean\ oddColSum(int[][],\ int)
+comment4.params=nums
+comment4.target=int[]\ minRow(int[][])
+numComments=5
