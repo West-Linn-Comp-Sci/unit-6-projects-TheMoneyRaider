@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.target=MusicLibrary
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ MusicLibrary\ here.\r\n\r\n\ @Griffin\ Stober\r\n\ @v1.0\r\n
+comment1.params=
+comment1.target=MusicLibrary()
+comment10.params=target
+comment10.target=int\ binarySearchTime(double)
+comment11.params=target
+comment11.target=int\ binarySearchArtist(java.lang.String)
+comment2.params=a
+comment2.target=void\ add(Album)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment4.params=
+comment4.target=void\ doubleSize()
+comment5.params=a
+comment5.target=void\ remove(int)
+comment6.params=target
+comment6.target=int\ findTitle(java.lang.String)
+comment7.params=target
+comment7.target=int\ findArtist(java.lang.String)
+comment8.params=
+comment8.target=void\ sortTime()
+comment9.params=
+comment9.target=void\ sortArtist()
+numComments=12

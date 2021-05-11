@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Battleship1D
+comment1.params=
+comment1.target=Battleship1D()
+comment2.params=target
+comment2.target=boolean\ guess(int)
+comment3.params=a\ place
+comment3.target=void\ setShip(Battleship,\ int)
+comment4.params=
+comment4.target=int\ getSeaSize()
+comment5.params=i
+comment5.target=Battleship\ getShip(int)
+comment6.params=
+comment6.target=java.util.ArrayList\ getSea()
+comment7.params=j
+comment7.target=boolean\ checkLife(int)
+numComments=8

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Album
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Album\ here.\r\n\r\n\ @Griffin\ Stober\r\n\ @v1.0\r\n
+comment1.params=a\ b\ aa\ bb
+comment1.target=Album(java.lang.String,\ java.lang.String,\ int,\ double)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=
+comment3.target=java.lang.String\ getTitle()
+comment4.params=
+comment4.target=java.lang.String\ getArtist()
+comment5.params=
+comment5.target=int\ getTracks()
+comment6.params=
+comment6.target=double\ getTime()
+numComments=7
