@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Coin
+comment1.params=value\ name
+comment1.target=Coin(double,\ java.lang.String)
+comment2.params=
+comment2.target=double\ getValue()
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=aCoin
+comment4.target=boolean\ equals(Coin)
+numComments=5
