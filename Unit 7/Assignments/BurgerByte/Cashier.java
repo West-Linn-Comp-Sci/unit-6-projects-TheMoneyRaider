@@ -1,24 +1,15 @@
 
-public class Cashier {
+public class Cashier extends Employee{
 
     public static final double CASHIER_WAGE = 6.50;
-    public static final double BASE_WAGE = 10.00;
-
-    private String name;
-    private int age;
-    private double hoursWorked;
-    private boolean atWork;
     private BurgerByte workBranch;
     private boolean isRegisterOpen;
 
     public Cashier(String name, int age, BurgerByte workBranch) {
-        this.name = name;
-        this.age = age;
-        hoursWorked = 0;
-        atWork = false;
+        super(name,age);
         this.workBranch = workBranch;
         isRegisterOpen = false;
-        workBranch.addCashier(this);
+        workBranch.addStaff(this);
     }
 
     // getters
@@ -28,12 +19,6 @@ public class Cashier {
     public boolean isAtWork() { return atWork; }
     public BurgerByte getWorkPlace() { return workBranch; }
     public boolean isRegisterOpen() { return isRegisterOpen; }
-
-    // MODIFIES: this
-    // EFFECTS: adds hours to the hoursWorked field
-    private void logHoursWorked(double hours) {
-        hoursWorked += hours;
-    }
 
     // EFFECTS: sets isRegisterOpen to true, and updates atWork to reflect that this Cashier is
     //          now at work

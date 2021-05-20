@@ -4,12 +4,11 @@ public class FryCook extends Employee{
     public static final double FRYCOOK_WAGE = 5.50;
     private BurgerByte workBranch;
     private boolean isGrillReady;
-
     public FryCook(String name, int age, BurgerByte workBranch) {
         super(name,age);
         this.workBranch = workBranch;
         isGrillReady = false;
-        workBranch.addFryCook(this);
+        workBranch.addStaff(this);
     }
 
     // getters

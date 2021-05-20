@@ -3,26 +3,20 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Manager {
+public class Manager extends Employee{
 
     public static final double MANAGER_WAGE = 9.50;
     public static final double BASE_WAGE = 10.00;
 
-    private String name;
-    private int age;
+
     private double hoursWorked;
     private boolean atWork;
     private BurgerByte managingBranch;
-    private List<Cashier> cashiers;
-    private List<FryCook> fryCooks;
+    private List<Employee> team;
 
     public Manager(String name, int age) {
-        this.name = name;
-        this.age = age;
-        hoursWorked = 0;
-        atWork = false;
-        cashiers = new ArrayList<>();
-        fryCooks = new ArrayList<>();
+        super(name,age);
+        team = new ArrayList<>();
     }
 
     // getters
@@ -31,14 +25,8 @@ public class Manager {
     public boolean isAtWork() { return atWork; }
     public double getHoursWorked() { return hoursWorked; }
     public BurgerByte getManagingBranch() { return managingBranch; }
-    public List<Cashier> getCashiers() { return cashiers; }
-    public List<FryCook> getFryCooks() { return fryCooks; }
+    public List<Employee> getTeam() { return team; }
 
-    // MODIFIES: this
-    // EFFECTS: adds hours to the hoursWorked field
-    private void logHoursWorked(double hours) {
-        hoursWorked += hours;
-    }
 
     // REQUIRES: hours >= 0
     // MODIFIES: this
@@ -72,37 +60,19 @@ public class Manager {
     // REQUIRES: c must not be in already in team and this Manager's restaurant
     // MODIFIES: this
     // EFFECTS: adds given c to team and this Manager's restaurant
-    public void hire(Cashier c) {
-        managingBranch.addCashier(c);
-        cashiers.add(c);
+    public void hire(Employee c) {
+        managingBranch.addStaff(c);
+        team.add(c);
         System.out.println("Welcome aboard, " + c.getName() + "!");
-    }
-
-    // REQUIRES: fc must not be in already in team and this Manager's restaurant
-    // MODIFIES: this
-    // EFFECTS: adds given fc to team and this Manager's restaurant
-    public void hire(FryCook fc) {
-        managingBranch.addFryCook(fc);
-        fryCooks.add(fc);
-        System.out.println("Welcome aboard, " + fc.getName() + "!");
     }
 
     // REQUIRES: c must be in this team and and this Manager's restaurant
     // MODIFIES: this
     // EFFECTS: removes given Cashier from team and this Manager's restaurant
-    public void fire(Cashier c) {
-        managingBranch.removeCashier(c);
-        cashiers.remove(c);
+    public void fire(Employee c) {
+        managingBranch.removeStaff(c);
+        team.remove(c);
         System.out.println("Sorry to let you go, " + c.getName() + ".");
-    }
-
-    // REQUIRES: fc must be in this team and and this Manager's restaurant
-    // MODIFIES: this
-    // EFFECTS: removes given fc from team and this Manager's restaurant
-    public void fire(FryCook fc) {
-        managingBranch.removeFrycook(fc);
-        fryCooks.remove(fc);
-        System.out.println("Sorry to let you go, " + fc.getName() + ".");
     }
 
 
