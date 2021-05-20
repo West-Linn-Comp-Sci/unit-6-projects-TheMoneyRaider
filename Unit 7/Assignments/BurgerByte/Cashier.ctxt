@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Cashier
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment2.params=
+comment2.target=int\ getAge()
+comment3.params=
+comment3.target=double\ getHoursWorked()
+comment4.params=
+comment4.target=boolean\ isAtWork()
+comment5.params=
+comment5.target=boolean\ isRegisterOpen()
+comment6.params=hours
+comment6.target=void\ logHoursWorked(double)
+comment7.params=hours
+comment7.target=void\ startWork(double)
+comment8.params=
+comment8.target=void\ leaveWork()
+comment9.params=
+comment9.target=double\ computeWage()
+numComments=10
